@@ -1,64 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-    <!--<h1>Hello World, we are Microverse software developers!</h1> -->
-    <form id="survey-form">
-      <label>Name</label><input placeholder="Enter your name" type="text"/>
-      <label>Email</label><input placeholder="Enter your email" type="email"/>
-      <label>Age (optional)</label><input placeholder="Age" min=1 max=99 type="number"/>
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <!--<h1>Hello World, we are Microverse software developers!</h1> -->
+  <form id="survey-form">
+
+    <div>
+      <label>Name</label>
+      <div><input placeholder="Enter your name" type="text" id="name" /></div>
+    </div>
+    <div>
+      <label>Email</label>
+      <div><input placeholder="Enter your email" type="email" id="email" /></div>
+    </div>
+    <div>
+      <label>Age (optional)</label>
+      <div><input placeholder="Age" min=1 max=99 type="number" id="number" /></div>
+    </div>
+    <div>
       <label>Which option best describes your current role?</label>
-      <select name="dropdown" id="dropdown" >
-        <option value="">Select current role</option>
-        <option value="student">Student</option>
-        <option value="fulltime-job">Full-time job</option>
-        <option value="fulltime-learner">Fulltime-learner</option>
-        <option value="prefer not to say">Prefer not to say</option>
-        <option value="Other">Other</option>
-      </select>
+      <div>
+        <select name="dropdown" id="dropdown">
+          <option value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="fulltime-job">Full-time job</option>
+          <option value="fulltime-learner">Fulltime-learner</option>
+          <option value="prefer not to say">Prefer not to say</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="radio">
       <label>Would you recommend freeCodeCamp to a friend?</label>
-      <input type="radio" name="radio-attribute"/><label>Definitely</label>
-      <input type="radio" name="radio-attribute"/><label>Maybe</label>
-      <input type="radio" name="radio-attribute"/> <label>Not sure</label>
+      <div>
+        <input type="radio" name="radio-attribute" /><label>Definitely</label>
+      </div>
+      <div>
+        <input type="radio" name="radio-attribute" /><label>Maybe</label>
+      </div>
+      <div>
+        <input type="radio" name="radio-attribute" /> <label>Not sure</label>
+      </div>
+    </div>
 
+    <div>
       <label>What is your favorite feature of freeCodeCamp?</label>
-      <select name="dropdown2" id="dropdown2" >
-        <option value="">Select an Option</option>
-        <option value="challenges">challenges</option>
-        <option value="projects">projects</option>
-        <option value="community">Community</option>
-        <option value="open-source">Open Source</option>
-      </select>
+      <div>
+        <select name="dropdown2" id="dropdown2">
+          <option value="">Select an Option</option>
+          <option value="challenges">challenges</option>
+          <option value="projects">projects</option>
+          <option value="community">Community</option>
+          <option value="open-source">Open Source</option>
+        </select>
+      </div>
+    </div>
 
+    <div>
       <label>What would you like to see improved? (Check all that apply)</label>
-      <input type="checkbox"/><label>Frontend projects</label>
-      <input  type="checkbox"/><label>Backend projects</label>
-      <input  type="checkbox"/><label>Challenges</label>
-      <input  type="checkbox"/><label>Data visualisation</label>
-      <input  type="checkbox"/><label>Open Source</label>
-      <input  type="checkbox"/><label>Videos</label>
-      <input  type="checkbox"/><label>Indian Meetups</label>
-      <input  type="checkbox"/><label>Nigerian Meetups</label>
-      <input  type="checkbox"/><label>Forum</label>
-      
+      <div><input type="checkbox" /><label>Frontend projects</label></div>
+      <div><input type="checkbox" /><label>Backend projects</label></div>
+      <div><input type="checkbox" /><label>Challenges</label></div>
+      <div><input type="checkbox" /><label>Data visualisation</label></div>
+      <div><input type="checkbox" /><label>Open Source</label></div>
+      <div><input type="checkbox" /><label>Videos</label></div>
+      <div><input type="checkbox" /><label>Indian Meetups</label></div>
+      <div><input type="checkbox" /><label>Nigerian Meetups</label></div>
+    </div>
+
+    <div>
       <label>Any comments or suggestions?</label>
-      <textarea placeholder="Enter your comment here"></textarea>
-      
-      <button type="button">SUBMIT</button>
+      <div>
+        <textarea  id="textarea" placeholder="Enter your comment here"></textarea>
+      </div>
+    </div>
 
-    </form>
+    <button id="btn" type="button">SUBMIT</button>
+
+  </form>
 
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
+  <!--
 
     Hello Camper!
 
@@ -70,6 +103,7 @@
     - The freeCodeCamp Team
 
     -->
-    <script  src="js/index.js"></script>
-  </body>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
