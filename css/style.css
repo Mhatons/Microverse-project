@@ -29,7 +29,7 @@ select{
     display: flex; flex-direction: column; margin-bottom: 1em;
 }
 #textarea{
-    width: 95%; height: 100px; margin-bottom: 1em; border: none; outline: none; padding: 10px;
+    width: 96.5%; height: 100px; margin-bottom: 1em; border: none; outline: none; padding: 10px;
 }
 #btn{
     width: 100%; padding: 1em 0em; background-color: orangered; color: white; border: none;
