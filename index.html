@@ -7,8 +7,53 @@
   </head>
 
   <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <!--<h1>Hello World, we are Microverse software developers!</h1> -->
+    <form id="survey-form">
+      <label>Name</label><input placeholder="Enter your name" type="text"/>
+      <label>Email</label><input placeholder="Enter your email" type="email"/>
+      <label>Age (optional)</label><input placeholder="Age" min=1 max=99 type="number"/>
+      <label>Which option best describes your current role?</label>
+      <select name="dropdown" id="dropdown" >
+        <option value="">Select current role</option>
+        <option value="student">Student</option>
+        <option value="fulltime-job">Full-time job</option>
+        <option value="fulltime-learner">Fulltime-learner</option>
+        <option value="prefer not to say">Prefer not to say</option>
+        <option value="Other">Other</option>
+      </select>
+      <label>Would you recommend freeCodeCamp to a friend?</label>
+      <input type="radio" name="radio-attribute"/><label>Definitely</label>
+      <input type="radio" name="radio-attribute"/><label>Maybe</label>
+      <input type="radio" name="radio-attribute"/> <label>Not sure</label>
 
-    <h1>Hello World, we are Microverse software developers!</h1>
+      <label>What is your favorite feature of freeCodeCamp?</label>
+      <select name="dropdown2" id="dropdown2" >
+        <option value="">Select an Option</option>
+        <option value="challenges">challenges</option>
+        <option value="projects">projects</option>
+        <option value="community">Community</option>
+        <option value="open-source">Open Source</option>
+      </select>
+
+      <label>What would you like to see improved? (Check all that apply)</label>
+      <input type="checkbox"/><label>Frontend projects</label>
+      <input  type="checkbox"/><label>Backend projects</label>
+      <input  type="checkbox"/><label>Challenges</label>
+      <input  type="checkbox"/><label>Data visualisation</label>
+      <input  type="checkbox"/><label>Open Source</label>
+      <input  type="checkbox"/><label>Videos</label>
+      <input  type="checkbox"/><label>Indian Meetups</label>
+      <input  type="checkbox"/><label>Nigerian Meetups</label>
+      <input  type="checkbox"/><label>Forum</label>
+      
+      <label>Any comments or suggestions?</label>
+      <textarea placeholder="Enter your comment here"></textarea>
+      
+      <button type="button">SUBMIT</button>
+
+    </form>
 
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
