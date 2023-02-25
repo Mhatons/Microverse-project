@@ -3,30 +3,34 @@
 }
 body{
     background-image: url(../image/chamomile-field-flowers-border-beautiful-nature-scene-blooming-medical-chamomilles-94966847.jpg);
-    background-size: cover; background-repeat: no-repeat; color: blue; font-weight: 550;
+    background-size: cover; background-repeat: no-repeat;
 }
 #title, #description{
     text-align: center;
 }
 #survey-form{
-    width: 50%; margin: auto;
+    width: 40%; margin: auto; background-color: #064606c9; padding: 2em; line-height: 2em;color: white; margin-top: 1.5em; margin-bottom: 2em; border-radius: 5px;
+    overflow: scroll; height: 600px;
+}
+#survey-form::-webkit-scrollbar{
+    display: none;
 }
 #name, #email, #number{
-    width: 100%; padding: 0.7em 0em; border-radius: 5px;
+    width: 100%; padding: 1em 0em; border-radius: 4px; margin-bottom: 1em;
 }
 input{
     border: 1px solid silver; outline: none;
 }
 select{
-    width: 100%; padding: 0.7em 0em; border-radius: 5px;
+    width: 100%; padding: 0.7em 0em; border-radius: 4px; margin-bottom: 1em;
     border: 1px solid silver; outline: none;
 }
 #radio{
-    display: flex; flex-direction: column;
+    display: flex; flex-direction: column; margin-bottom: 1em;
 }
 #textarea{
-    width: 100%; height: 100px;
+    width: 95%; height: 100px; margin-bottom: 1em; border: none; outline: none; padding: 10px;
 }
 #btn{
-    width: 100%; padding: 0.6em 0em; background-color: brown; color: white; border: none;
+    width: 100%; padding: 1em 0em; background-color: orangered; color: white; border: none;
 }
